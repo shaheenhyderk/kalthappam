@@ -69,6 +69,7 @@ body {
   object-fit: contain;
 }
 
+
 .side-btn {
   position: fixed;
   right: 32px;
@@ -198,3 +199,4 @@ body {
   white-space: nowrap;
   border: 0;
 }
+

@@ -13,6 +13,73 @@
 
   gsap.registerPlugin(ScrollTrigger);
 
+  // GSAP micro-interactions for WhatsApp buttons.
+  document.querySelectorAll(".whatsapp-btn").forEach((button) => {
+    const icon = button.querySelector(".wa-icon-img");
+
+    button.addEventListener("mouseenter", () => {
+      gsap.to(button, {
+        y: -2,
+        boxShadow: "0 8px 18px rgba(75, 55, 47, 0.22)",
+        filter: "saturate(1.03)",
+        duration: 0.22,
+        ease: "power2.out",
+        overwrite: "auto"
+      });
+      if (icon) {
+        gsap.to(icon, {
+          x: 2,
+          rotation: -7,
+          scale: 1.04,
+          duration: 0.22,
+          ease: "power2.out",
+          overwrite: "auto"
+        });
+      }
+    });
+
+    button.addEventListener("mouseleave", () => {
+      gsap.to(button, {
+        y: 0,
+        boxShadow: "0 0 0 rgba(0, 0, 0, 0)",
+        filter: "saturate(1)",
+        duration: 0.22,
+        ease: "power2.out",
+        overwrite: "auto"
+      });
+      if (icon) {
+        gsap.to(icon, {
+          x: 0,
+          rotation: 0,
+          scale: 1,
+          duration: 0.22,
+          ease: "power2.out",
+          overwrite: "auto"
+        });
+      }
+    });
+
+    button.addEventListener("mousedown", () => {
+      gsap.to(button, {
+        y: 0,
+        boxShadow: "0 3px 8px rgba(75, 55, 47, 0.2)",
+        duration: 0.12,
+        ease: "power2.out",
+        overwrite: "auto"
+      });
+    });
+
+    button.addEventListener("mouseup", () => {
+      gsap.to(button, {
+        y: -2,
+        boxShadow: "0 8px 18px rgba(75, 55, 47, 0.22)",
+        duration: 0.12,
+        ease: "power2.out",
+        overwrite: "auto"
+      });
+    });
+  });
+
   // Split each story paragraph into words for staggered reveal.
   document.querySelectorAll(".story p").forEach((p) => {
     const parts = p.innerHTML.split(/(<br\s*\/?\s*>)/gi);

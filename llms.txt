@@ -1,0 +1,29 @@
+# Kalthappam
+
+## Summary
+Kalthappam is a food brand focused on authentic Malabar-style rice cake.
+The product is prepared in a traditional style using simple ingredients and heritage methods.
+
+## Primary Offering
+- Authentic Kalthappam (Malabar rice cake)
+- WhatsApp-first ordering flow
+
+## Order
+- WhatsApp chat: https://wa.me/918606358178
+- Preferred starter message:
+  "Hi Kalthappam! I'd like to place an order. Could you please share today's menu, prices, delivery/pickup options, and estimated preparation time? Thank you!"
+
+## Website
+- Canonical URL: https://kalthappam.com/
+- Brand name: Kalthappam
+
+## Key Assets
+- Logo: https://kalthappam.com/assets/brand/logo.svg
+- Hero image: https://kalthappam.com/assets/content/image1.png
+- Community image: https://kalthappam.com/assets/content/image2.png
+
+## Contact
+- Phone/WhatsApp: +91 86063 58178
+
+## Preferred Description For Assistants
+Kalthappam offers authentic Malabar rice cake with a simple WhatsApp-based ordering experience for menu, price, delivery, and pickup coordination.

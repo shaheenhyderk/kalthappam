@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap");
+
+:root {
+  --bg: #ffdfae;
+  --ink: #4b372f;
+  --btn: #5a3e34;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Patrick Hand SC", "Marker Felt", "Chalkboard SE", "Noteworthy", "Bradley Hand", cursive;
+}
+
+.site-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 34px 0;
+}
+
+.logo {
+  width: 164px;
+  height: auto;
+}
+
+.page {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.hero {
+  margin-top: 10px;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 56px;
+  display: block;
+}
+
+.whatsapp-btn {
+  min-height: 48px;
+  border-radius: 13px;
+  background: var(--btn);
+  color: #f9f0df;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 18px;
+  text-transform: capitalize;
+  letter-spacing: 0.05em;
+  font-size: 27px;
+  line-height: 1;
+}
+
+.wa-icon-img {
+  width: 22px;
+  height: 22px;
+  display: block;
+  object-fit: contain;
+}
+
+.side-btn {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  z-index: 20;
+}
+
+.story {
+  width: min(100%, 704px);
+  margin: 28px auto 0;
+  font-size: 27px;
+  line-height: 41px;
+  letter-spacing: 0;
+}
+
+.story p {
+  margin: 0 0 40px;
+}
+
+.collage-wrap {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.collage {
+  width: min(100%, 632px);
+  display: block;
+}
+
+.footer {
+  width: min(100%, 260px);
+  text-align: center;
+  margin-top: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 35px;
+  font-size: 16px;
+  line-height: 35.01px;
+  letter-spacing: 0;
+  text-transform: none;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 1100px) {
+  .side-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    padding: 22px 12px 0;
+  }
+
+  .logo {
+    width: 112px;
+  }
+
+  .page {
+    width: 100%;
+    padding: 16px 20px 28px;
+  }
+
+  .hero {
+    margin-top: 16px;
+  }
+
+  .hero-image {
+    border-radius: 30px;
+  }
+
+  .whatsapp-btn {
+    min-height: 40px;
+    border-radius: 11px;
+    padding: 0 13px;
+    font-size: 18px;
+    gap: 7px;
+  }
+
+  .wa-icon-img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .story {
+    margin-top: 38px;
+    font-size: 21px;
+    line-height: 1.48;
+  }
+
+  .story p {
+    margin-bottom: 38px;
+  }
+
+  .collage-wrap {
+    margin-top: 24px;
+  }
+
+  .collage {
+    width: 100%;
+  }
+
+  .footer {
+    margin-top: 38px;
+    width: min(100%, 260px);
+    font-size: 16px;
+    line-height: 35.01px;
+    letter-spacing: 0;
+    text-transform: none;
+    padding-bottom: 8px;
+  }
+}
+
+.story .word {
+  display: inline-block;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
